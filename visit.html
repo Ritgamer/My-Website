@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .sidebar {
+            width: 250px;
+            background-color: #000;
+            /* Black background */
+            color: #d3d3d3;
+            /* Light grey text */
+            padding: 20px;
+            position: fixed;
+            left: 0;
+            top: 0;
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            border-bottom: 2px solid #d3d3d3;
+            padding-bottom: 10px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            padding: 10px;
+            border-bottom: 1px solid #444;
+            /* Dark grey separator */
+            cursor: pointer;
+        }
+
+        .sidebar ul li:hover {
+            background-color: #222;
+            /* Slightly lighter black */
+        }
+
+        .content {
+            margin-left: 270px;
+            padding: 20px;
+        }
+    </style>
+
+ !DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background-color: black;
+            /* Black background */
+            color: lightgrey;
+            /* Light grey text */
+            position: fixed;
+            left: 0;
+            top: 0;
+            padding: 20px;
+        }
+
+        .sidebar h2 {
+            color: white;
+            /* Keeping heading white for contrast */
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            padding: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .sidebar ul li:hover {
+            background-color: grey;
+            /* Light grey hover effect */
+            color: white;
+            /* White text on hover */
+        }
+    </style>
+    
+
+     <style>* {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                display: flex;
+                font-family: Arial, sans-serif;
+            }
+
+            .sidebar {
+                width: 250px;
+                height: 100vh;
+                background-color: black;
+                color: lightgrey;
+                position: fixed;
+                left: 0;
+                top: 0;
+                padding: 20px;
+                overflow-y: auto;
+            }
+
+            .sidebar h2 {
+                color: white;
+                text-align: center;
+                margin-bottom: 15px;
+            }
+
+            .sidebar ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            .sidebar ul li {
+                padding: 12px;
+                cursor: pointer;
+                text-align: center;
+                transition: background0.3s;
+            }
+
+            .sidebar ul li:hover {
+                background-color: grey;
+                color: white;
+            }
+
+            .content {
+                margin-left: 250px;
+                /* Push content to the right */
+                padding: 20px;
+                width: calc(100% - 250px);
+                background-color: #f4f4f4;
+                min-height: 100vh;
+            }
+        </style>
+
+    <body>
+        <!-- Sidebar for City Selection -->
+        <div class="sidebar">
+            <h2>Explore Cities</h2>
+            <ul>
+                <li onclick="showCityDetails('mumbai')">Mumbai</li>
+                <li onclick="showCityDetails('delhi')">Delhi</li>
+                <li onclick="showCityDetails('bangalore')">Bangalore</li>
+                <li onclick="showCityDetails('chennai')">Chennai</li>
+                <li onclick="showCityDetails('kolkata')">Kolkata</li>
+                <li onclick="showCityDetails('hyderabad')">Hyderabad</li>
+                <li onclick="showCityDetails('pune')">Pune</li>
+                <li onclick="showCityDetails('ahmedabad')">Ahmedabad</li>
+                <li onclick="showCityDetails('jaipur')">Jaipur</li>
+                <li onclick="showCityDetails('lucknow')">Lucknow</li>
+            </ul>
+        </div>
+
+        <!-- Main Content Section (Updates on Click) -->
+        <div class="content" id="city-details">
+            <h1>Discover India's Top Metro Cities</h1>
+            <p>Click on a city in the sidebar to explore its Shopping, Adventure, Food Specialties, and Attractions.</p>
+        </div>
+
+        <!-- JavaScript for Dynamic Content -->
+        <script>
+            function showCityDetails(city) {
+                const cityData = {
+                    mumbai: `
+                        <h2>Mumbai</h2>
+                        <h3>Shopping</h3>
+                        <p>Visit Colaba Causeway, Linking Road, and Palladium Mall.</p>
+                        <h3>Adventure</h3>
+                        <p>Scuba diving in Tarkarli, trekking in Sanjay Gandhi National Park.</p>
+                        <h3>Food Specialties</h3>
+                        <p>Try Vada Pav, Pav Bhaji, and Seafood at Juhu Beach.</p>
+                        <h3>Top Attractions</h3>
+                        <p>Gateway of India, Marine Drive, and Elephanta Caves.</p>
+                    `,
+                    delhi: `
+                        <h2>Delhi</h2>
+                        <h3>Shopping</h3>
+                        <p>Explore Chandni Chowk, Connaught Place, and Dilli Haat.</p>
+                        <h3>Adventure</h3>
+                        <p>Hot air ballooning in Sohna, adventure parks in Gurgaon.</p>
+                        <h3>Food Specialties</h3>
+                        <p>Famous for Chole Bhature, Parathas, and Kebabs.</p>
+                        <h3>Top Attractions</h3>
+                        <p>India Gate, Red Fort, and Lotus Temple.</p>
+                    `,
+                    bangalore: `
+                        <h2>Bangalore</h2>
+                        <h3>Shopping</h3>
+                        <p>Visit Commercial Street, UB City, and Brigade Road.</p>
+                        <h3>Adventure</h3>
+                        <p>Go-karting, trekking at Nandi Hills, and Microlight Flying.</p>
+                        <h3>Food Specialties</h3>
+                        <p>Try Masala Dosa, Filter Coffee, and Mangalorean seafood.</p>
+                        <h3>Top Attractions</h3>
+                        <p>Lalbagh Botanical Garden, Cubbon Park, and Bangalore Palace.</p>
+                    `,
+                    chennai: `
+                        <h2>Chennai</h2>
+                        <h3>Shopping</h3>
+                        <p>Visit T. Nagar, Express Avenue, and Phoenix Marketcity.</p>
+                        <h3>Adventure</h3>
+                        <p>Surfing at Covelong Beach, scuba diving, and rock climbing.</p>
+                        <h3>Food Specialties</h3>
+                        <p>Famous for Idli, Dosa, Chettinad Cuisine, and Filter Coffee.</p>
+                        <h3>Top Attractions</h3>
+                        <p>Marina Beach, Kapaleeshwarar Temple, and San Thome Basilica.</p>
+                    `,
+                    kolkata: `
+                        <h2>Kolkata</h2>
+                        <h3>Shopping</h3>
+                        <p>Explore New Market, South City Mall, and Gariahat.</p>
+                        <h3>Adventure</h3>
+                        <p>River cruises, Sunderbans Safari, and Paintball.</p>
+                        <h3>Food Specialties</h3>
+                        <p>Try Roshogolla, Kathi Rolls, and Fish Curry.</p>
+                        <h3>Top Attractions</h3>
+                        <p>Victoria Memorial, Howrah Bridge, and Science City.</p>
+                    `,
+                    hyderabad: `
+                        <h2>Hyderabad</h2>
+                        <h3>Shopping</h3>
+                        <p>Laad Bazaar, Hyderabad Central, and GVK One Mall.</p>
+                        <h3>Adventure</h3>
+                        <p>Paragliding, go-karting, and trekking in Ananthagiri Hills.</p>
+                        <h3>Food Specialties</h3>
+                        <p>Famous for Hyderabadi Biryani, Haleem, and Irani Chai.</p>
+                        <h3>Top Attractions</h3>
+                        <p>Charminar, Golconda Fort, and Ramoji Film City.</p>
+                    `,
+                    pune: `
+                        <h2>Pune</h2>
+                        <h3>Shopping</h3>
+                        <p>MG Road, Phoenix Marketcity, and FC Road.</p>
+                        <h3>Adventure</h3>
+                        <p>Paragliding, trekking, and kayaking in Kamshet.</p>
+                        <h3>Food Specialties</h3>
+                        <p>Misal Pav, Puran Poli, and Vada Pav.</p>
+                        <h3>Top Attractions</h3>
+                        <p>Shaniwar Wada, Aga Khan Palace, and Sinhagad Fort.</p>
+                    `,
+                    ahmedabad: `
+                        <h2>Ahmedabad</h2>
+                        <h3>Shopping</h3>
+                        <p>Law Garden Market, Manek Chowk, and Alpha One Mall.</p>
+                        <h3>Adventure</h3>
+                        <p>Hot air ballooning, rock climbing, and kite flying.</p>
+                        <h3>Food Specialties</h3>
+                        <p>Gujarati Thali, Khandvi, and Fafda-Jalebi.</p>
+                        <h3>Top Attractions</h3>
+                        <p>Sabarmati Ashram, Kankaria Lake, and Akshardham Temple.</p>
+                    `,
+                    jaipur: `
+                        <h2>Jaipur</h2>
+                        <h3>Shopping</h3>
+                        <p>Johari Bazaar, Bapu Bazaar, and World Trade Park.</p>
+                        <h3>Adventure</h3>
+                        <p>Hot air ballooning, camel safari, and dune bashing.</p>
+                        <h3>Food Specialties</h3>
+                        <p>Dal Baati Churma, Ghewar, and Laal Maas.</p>
+                        <h3>Top Attractions</h3>
+                        <p>Hawa Mahal, Amber Fort, and City Palace.</p>
+                    `,
+                    lucknow: `
+                        <h2>Lucknow</h2>
+                        <h3>Shopping</h3>
+                        <p>Hazratganj, Aminabad, and Phoenix Mall.</p>
+                        <h3>Adventure</h3>
+                        <p>Water parks, wildlife safari, and heritage walks.</p>
+                        <h3>Food Specialties</h3>
+                        <p>Lucknawi Biryani, Tunday Kebab, and Sheermal.</p>
+                        <h3>Top Attractions</h3>
+                        <p>Bara Imambara, Rumi Darwaza, and British Residency.</p>
+                    `,
+                };
+                document.getElementById("city-details").innerHTML = cityData[city] || "<h2>City Not Found</h2>";
+            }
+        </script>
+    </body>
+</body>
+
+</html>
+</body>
+
+</html>
