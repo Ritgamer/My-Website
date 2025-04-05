@@ -116,12 +116,77 @@
         .contact a:hover {
             text-decoration: underline;
         }
+                .sidebar {
+
+            position: fixed;
+
+            top: 0;
+
+            left: -250px;
+
+            width: 250px;
+
+            height: 100%;
+
+            background: white;
+
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+
+            transition: left 0.3s ease;
+
+            padding: 15px;
+
+        }
+
+        .sidebar.active {
+
+            left: 0;
+
+        }
+    
+.list-group-item {
+
+border: none;
+
+padding: 10px 15px;
+
+font-size: 16px;
+
+background: none;
+
+transition: background 0.3s ease, color 0.3s ease;
+
+}
+
+.list-group-item a {
+
+text-decoration: none;
+
+color: #333;
+
+display: block;
+
+}
+
+.list-group-item:hover {
+
+background: #f0f0f0;
+
+}
+
+.list-group-item a:hover {
+
+color: #007bff;
+
+}
     </style>
 </head>
 
 <body>
     <header>Bangalore</header>
     <nav>
+        
+        <a href="index.html">Index</a>
         <a href="mumbai.html">Mumbai</a>
         <a href="delhi.html">Delhi</a>
         <a href="bangalore.html">Bangalore</a>
@@ -192,27 +257,60 @@
                 <h2>The Oberoi, Bangalore</h2>
                 <img src="oberoi B.avif" alt="The Oberoi Bangalore">
                 <p>A luxury hotel with lush gardens, excellent service, and a prime location in Bangalore.</p>
-                <Contact>: 080 2558 5858 </Contact>
+                        <div class="hotel">
+                            <strong>⭐ 4.9 The Oberoi, Bangalore</strong><br>
+                            📍 MG Road, Bangalore<br>
+                            📞 +91 80 2558 5858<br>
+                            ✨ Lush gardens and tranquil luxury in the city center.<br>
+                            <a href="https://www.google.com/maps/place/The+Oberoi,+Bengaluru/@12.9736048,77.6158276,17z/data=!4m10!3m9!1s0x3bae16835c3ada19:0x7065f59042b7b2db!5m3!1s2025-04-14!4m1!1i2!8m2!3d12.9736048!4d77.6184025!16s%2Fg%2F1thqf630?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" class="app-link">View in Map</a>
+                        </div>
             </div>
             <div class="hotel">
                 <h2>The Leela Palace Bangalore</h2>
                 <img src="taj B.jpg" alt="The Leela Palace Bangalore">
-                <p>An opulent hotel offering grandeur, top-tier hospitality, and fine dining experiences.</p>
+                <p>An opulent hotel offering grandeur, top-tier hospitality, and fine dining experiences.</p><div class="hotel">
+                    <strong>⭐ 4.8 The Leela Palace Bangalore</strong><br>
+                    📍 Old Airport Road, Bangalore<br>
+                    📞 +91 80 2521 1234<br>
+                    ✨ Majestic architecture and royal treatment.<br>
+                    <a href="https://www.google.com/maps/place/The+Leela+Palace+Bengaluru+-+Garden+City's+Only+Modern+Palace+Hotel/@12.9603365,77.6458612,17z/data=!4m10!3m9!1s0x3bae14067cca9bdd:0x111bbe37cc24e71a!5m3!1s2025-04-14!4m1!1i2!8m2!3d12.9603365!4d77.6484361!16s%2Fg%2F1tf00xs5?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" class="app-link">View in Map</a>
+                </div>
             </div>
             <div class="hotel">
                 <h2>ITC Gardenia</h2>
                 <img src="gardina B.jpg" alt="ITC Gardenia">
                 <p>An eco-friendly luxury hotel known for its sustainability initiatives and elegant ambiance.</p>
+                        <div class="hotel">
+                            <strong>⭐ 4.7 ITC Gardenia</strong><br>
+                            📍 Residency Road, Bangalore<br>
+                            📞 +91 80 2211 9898<br>
+                            ✨ Eco-friendly luxury with stylish decor.<br>
+                            <a href="https://www.google.com/maps/place/ITC+Gardenia,+a+Luxury+Collection+Hotel,+Bengaluru/@12.9669848,77.5929772,17z/data=!4m10!3m9!1s0x3a0276dd2cf216d3:0x523e0c08edd084f2!5m3!1s2025-04-14!4m1!1i2!8m2!3d12.9669848!4d77.5955521!16s%2Fg%2F124stnrjw?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" class="app-link">View in Map</a>
+                        </div>
             </div>
             <div class="hotel">
                 <h2>JW Marriott Hotel Bangalore</h2>
                 <img src="jw B.webp" alt="JW Marriott Hotel Bangalore">
                 <p>A premium business and leisure hotel with top-notch facilities and a relaxing spa.</p>
+                        <div class="hotel">
+                            <strong>⭐ 4.6 JW Marriott Hotel Bangalore</strong><br>
+                            📍 Vittal Mallya Road, Bangalore<br>
+                            📞 +91 80 6718 9999<br>
+                            ✨ Contemporary design with excellent service.<br>
+                            <a href="https://www.google.com/maps/place/JW+Marriott+Hotel+Bengaluru/@12.9723618,77.5924764,17z/data=!4m10!3m9!1s0x3bae1679c4616049:0x21e7060fdb88a82b!5m3!1s2025-04-14!4m1!1i2!8m2!3d12.9723618!4d77.5950513!16s%2Fg%2F1jgl_xq9n?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" class="app-link">View in Map</a>
+                        </div>
             </div>
             <div class="hotel">
                 <h2>Taj West End</h2>
                 <img src="end B.jpg" alt="Taj West End">
                 <p>A heritage hotel blending colonial-era charm with contemporary luxury.</p>
+                        <div class="hotel">
+                            <strong>⭐ 4.5 Taj West End</strong><br>
+                            📍 Race Course Road, Bangalore<br>
+                            📞 +91 80 6660 5660<br>
+                            ✨ Heritage property surrounded by 20 acres of gardens.<br>
+                            <a href="https://www.google.com/maps/place/Taj+West+End,+Bengaluru/@12.9845461,77.5820075,17z/data=!4m10!3m9!1s0x3bae1614ae4e21cb:0x43e3a50b3b1a3d3b!5m3!1s2025-04-14!4m1!1i2!8m2!3d12.9845461!4d77.5845824!16s%2Fg%2F1tfb4_z7?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" class="app-link">View in Map</a>
+                        </div>
             </div>
         </div>
         </div>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Restaurants</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .restaurant-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .restaurant {
+            background-color: #333;
+            padding: 15px;
+            border-radius: 10px;
+            width: 250px;
+            text-align: center;
+        }
+
+        .restaurant img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+                    header {
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 25px;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #272309;
+            text-decoration: none;
+            padding: 12px 25px;
+            display: inline-block;
+            font-size: 18px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background: rgba(231, 230, 223, 0.4);
+            border-radius: 8px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            text-align: center;
+            padding: 40px 0;
+        }
+        
+                .sidebar {
+
+            position: fixed;
+
+            top: 0;
+
+            left: -250px;
+
+            width: 250px;
+
+            height: 100%;
+
+            background: white;
+
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+
+            transition: left 0.3s ease;
+
+            padding: 15px;
+
+        }
+
+        .sidebar.active {
+
+            left: 0;
+
+        }
+    
+.list-group-item {
+
+border: none;
+
+padding: 10px 15px;
+
+font-size: 16px;
+
+background: none;
+
+transition: background 0.3s ease, color 0.3s ease;
+
+}
+
+.list-group-item a {
+
+text-decoration: none;
+
+color: #333;
+
+display: block;
+
+}
+
+.list-group-item:hover {
+
+background: #f0f0f0;
+
+}
+
+.list-group-item a:hover {
+
+color: #007bff;
+
+}
+    </style>
+</head>
+
+<body>
+            <nav>
+                
+                <a href="index.html">Index</a>
+                <a href="mumbai.html">Mumbai</a>
+                <a href="delhi.html">Delhi</a>
+                <a href="bangalore.html">Bangalore</a>
+                <a href="kolkata.html">Kolkata</a>
+                <a href="chennai.html">Chennai</a>
+                <a href="more.html">Basic</a>
+            </nav>
+    <h1>Top Restaurants</h1>
+    <div class="restaurant-container">
+        <div class="restaurant">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnZgkZn1HgUMu38UtXYMWIwm9QMyjSCZBdYQ&s" alt="Restaurant 1">
+            <h3>The Spice Affair</h3>
+            <p>⭐ Rating: 4.5</p>
+            <p>📍 Location: Mumbai</p>
+            <p>🍽️ Cuisine: North Indian</p>
+        </div>
+        <div class="restaurant">
+            <img src="https://flavoursofindiabykaran.com/cdn/shop/files/PHOTO-2022-10-22-13-06-25.jpg?v=1673896653" alt="Restaurant 2">
+            <h3>Flavors of India</h3>
+            <p>⭐ Rating: 4.3</p>
+            <p>📍 Location: Delhi</p>
+            <p>🍽️ Cuisine: Mughlai, Punjabi</p>
+        </div>
+        <div class="restaurant">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbVoN0ts6hidb_Ibt43aCVnUmdbNxmbIfiXg&s" alt="Restaurant 3">
+            <h3>Bistro Delight</h3>
+            <p>⭐ Rating: 4.6</p>
+            <p>📍 Location: Pune</p>
+            <p>🍽️ Cuisine: Continental</p>
+        </div>
+        <div class="restaurant">
+            <img src="https://content.jdmagicbox.com/comp/aurangabad-maharashtra/i5/9999px240.x240.230423230509.e6i5/catalogue/urban-bites-aurangabad-maharashtra-coffee-shops-dl0JmUQkMK.jpg" alt="Restaurant 4">
+            <h3>Urban Bites</h3>
+            <p>⭐ Rating: 4.2</p>
+            <p>📍 Location: Hyderabad</p>
+            <p>🍽️ Cuisine: Fusion</p>
+        </div>
+        <div class="restaurant">
+            <img src="https://b.zmtcdn.com/data/pictures/0/18800870/914b7e8f02e4c955863c5f5dac37c9d6_featured_v2.jpg" alt="Restaurant 5">
+            <h3>Gourmet Hub</h3>
+            <p>⭐ Rating: 4.7</p>
+            <p>📍 Location: Bengaluru</p>
+            <p>🍽️ Cuisine: Modern Indian</p>
+        </div>
+        <div class="restaurant">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/f4/5f/86/caption.jpg?w=900&h=500&s=1" alt="Restaurant 6">
+            <h3>Royal Tandoor</h3>
+            <p>⭐ Rating: 4.4</p>
+            <p>📍 Location: Lucknow</p>
+            <p>🍽️ Cuisine: Awadhi, Kebabs</p>
+        </div>
+        <div class="restaurant">
+            <img src="https://content3.jdmagicbox.com/comp/cuddalore/y6/9999p4142.4142.220421004952.b4y6/catalogue/meat-feast-restaurant-udayargudi-cuddalore-restaurants-djs66jvip5.jpg" alt="Restaurant 7">
+            <h3>The Meat Feast</h3>
+            <p>⭐ Rating: 4.5</p>
+            <p>📍 Location: Chandigarh</p>
+            <p>🍽️ Cuisine: Barbecue</p>
+        </div>
+        <div class="restaurant">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/00/89/2d/20160917-192504-largejpg.jpg?w=1000&h=-1&s=1" alt="Restaurant 8">
+            <h3>Italiano Delight</h3>
+            <p>⭐ Rating: 4.3</p>
+            <p>📍 Location: Goa</p>
+            <p>🍽️ Cuisine: Italian</p>
+        </div>
+        <div class="restaurant">
+            <img src="https://www.outriggersnsb.com/wp-content/uploads/2024/10/5-648x400.png" alt="Restaurant 9">
+            <h3>Coastal Catch</h3>
+            <p>⭐ Rating: 4.6</p>
+            <p>📍 Location: Kochi</p>
+            <p>🍽️ Cuisine: Seafood, Kerala</p>
+        </div>
+        <div class="restaurant">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/40/c9/fc/sweet-treats-dessert.jpg?w=700&h=400&s=1" alt="Restaurant 10">
+            <h3>Sweet Treats</h3>
+            <p>⭐ Rating: 4.8</p>
+            <p>📍 Location: Jaipur</p>
+            <p>🍽️ Cuisine: Bakery, Desserts</p>
+        </div>
+        <div class="restaurant">
+            <img src="https://content.jdmagicbox.com/comp/vijayawada/z4/0866px866.x866.220318234901.i6z4/catalogue/cross-roads-governerpet-vijayawada-restaurants-y26txbs296.jpg"
+                alt="Cross roads">
+            <h3>Cross Roads</h3>
+            <p>⭐ Rating: 4.7</p>
+            <p>📍 Location: Vijayawada</p>
+            <p>🍽️ Cuisine: Multi-cuisine</p>
+        </div>
+        </div>
+    </div>
+</body>
+
+</html>

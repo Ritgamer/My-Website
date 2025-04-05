@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South India Hotels</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #2b2525;
+            margin: 0;
+            padding: 0;
+        }
+
+        .sidebar {
+            background-color: rgb(0, 0, 0);
+            color: lightgray;
+            width: 250px;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            padding-top: 20px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: lightgray;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            background-color: gray;
+        }
+
+        .content {
+            margin-left: 260px;
+            padding: 20px;
+        }
+
+
+        /* Main Content */
+        .main-content {
+            margin-left: 270px;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .hotel-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .hotel-card {
+            background: white;
+            width: 300px;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: left;
+        }
+
+        .hotel-card img {
+            width: 100%;
+            height: 200px;
+        }
+
+        .hotel-info {
+            padding: 15px;
+        }
+
+        .hotel-info h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 18px;
+            color: green;
+            font-weight: bold;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 25px;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #272309;
+            text-decoration: none;
+            padding: 12px 25px;
+            display: inline-block;
+            font-size: 18px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background: rgba(231, 230, 223, 0.4);
+            border-radius: 8px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .sidebar {
+
+            position: fixed;
+
+            top: 0;
+
+            left: -250px;
+
+            width: 250px;
+
+            height: 100%;
+
+            background: white;
+
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+
+            transition: left 0.3s ease;
+
+            padding: 15px;
+
+        }
+
+        .sidebar.active {
+
+            left: 0;
+
+        }
+
+        .list-group-item {
+
+            border: none;
+
+            padding: 10px 15px;
+
+            font-size: 16px;
+
+            background: none;
+
+            transition: background 0.3s ease, color 0.3s ease;
+
+        }
+
+        .list-group-item a {
+
+            text-decoration: none;
+
+            color: #333;
+
+            display: block;
+
+        }
+
+        .list-group-item:hover {
+
+            background: #f0f0f0;
+
+        }
+
+        .list-group-item a:hover {
+
+            color: #007bff;
+
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .sidebar {
+            background-color: black;
+            color: lightgray;
+            width: 250px;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            padding-top: 20px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: lightgray;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            background-color: gray;
+        }
+
+        .content {
+            margin-left: 260px;
+            padding: 20px;
+        }
+
+        .specialty,
+        .visitor-care,
+        .visiting-places {
+            background-color: #43484d;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .footer {
+            background-color: #363a3d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <a href="index.html">Home</a>
+        <a href="north.html">North India Hotels</a>
+        <a href="south.html">South India Hotels</a>
+    </div>
+
+    <nav>
+
+        <a href="index.html">Index</a>
+        <a href="mumbai.html">Mumbai</a>
+        <a href="delhi.html">Delhi</a>
+        <a href="bangalore.html">Bangalore</a>
+        <a href="kolkata.html">Kolkata</a>
+        <a href="chennai.html">Chennai</a>
+        <a href="more.html">Basic</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>4-Star Hotels in South India</h1>
+        <div class="hotel-container">
+            <div class="hotel-card">
+                <div class="hotel-info">
+                    <h2>The Fern Residency</h2>
+                    <p>📍 Bangalore, Karnataka</p>
+                    <p class="price">₹3,800 / night</p>
+                </div>
+            </div>
+
+            <div class="hotel-card">
+                <div class="hotel-info">
+                    <h2>Royal Orchid Hotel</h2>
+                    <p>📍 Coimbatore, Tamil Nadu</p>
+                    <p class="price">₹4,100 / night</p>
+                </div>
+            </div>
+
+            <div class="hotel-card">
+                <div class="hotel-info">
+                    <h2>Grand Hyatt</h2>
+                    <p>📍 Kochi, Kerala</p>
+                    <p class="price">₹4,500 / night</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

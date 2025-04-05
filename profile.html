@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hotel Feedback Form</title>
+
+    <style>
+        body {
+
+            font-family: Arial, sans-serif;
+
+            background-color: #f4f4f4;
+
+            text-align: center;
+
+            padding: 20px;
+
+        }
+
+        .container {
+
+            background: white;
+
+            padding: 20px;
+
+            border-radius: 10px;
+
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+            max-width: 400px;
+
+            margin: auto;
+
+        }
+
+        .rating {
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 5px;
+
+        }
+
+        .rating input {
+
+            display: none;
+
+        }
+
+        .rating label {
+
+            font-size: 30px;
+
+            cursor: pointer;
+
+        }
+
+        .rating input:checked~label {
+
+            color: gold;
+
+        }
+
+        button {
+
+            background: #28a745;
+
+            color: white;
+
+            border: none;
+
+            padding: 10px;
+
+            width: 100%;
+
+            cursor: pointer;
+
+            border-radius: 5px;
+
+        }
+
+        button:hover {
+
+            background: #218838;
+
+        }
+
+        .footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: #b9b8af;
+            text-align: center;
+            padding: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+
+        .emoji {
+
+width: 80px;
+
+display: block;
+
+margin: 0 auto 10px;
+
+}
+
+            header {
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 25px;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #272309;
+            text-decoration: none;
+            padding: 12px 25px;
+            display: inline-block;
+            font-size: 18px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background: rgba(231, 230, 223, 0.4);
+            border-radius: 8px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            text-align: center;
+            padding: 40px 0;
+        }
+                .sidebar {
+
+            position: fixed;
+
+            top: 0;
+
+            left: -250px;
+
+            width: 250px;
+
+            height: 100%;
+
+            background: white;
+
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+
+            transition: left 0.3s ease;
+
+            padding: 15px;
+
+        }
+
+        .sidebar.active {
+
+            left: 0;
+
+        }
+    
+.list-group-item {
+
+border: none;
+
+padding: 10px 15px;
+
+font-size: 16px;
+
+background: none;
+
+transition: background 0.3s ease, color 0.3s ease;
+
+}
+
+.list-group-item a {
+
+text-decoration: none;
+
+color: #333;
+
+display: block;
+
+}
+
+.list-group-item:hover {
+
+background: #f0f0f0;
+
+}
+
+.list-group-item a:hover {
+
+color: #007bff;
+
+}
+    </style>
+
+</head>
+
+<body>
+            <nav>
+                <a href="index.html">Index</a>
+                <a href="mumbai.html">Mumbai</a>
+                <a href="delhi.html">Delhi</a>
+                <a href="bangalore.html">Bangalore</a>
+                <a href="kolkata.html">Kolkata</a>
+                <a href="chennai.html">Chennai</a>
+                <a href="more.html">Basic</a>
+            </nav>
+
+    <div class="container">
+
+<img src="https://cdn-icons-png.flaticon.com/512/742/742751.png" alt="Feedback Emoji" class="emoji">
+
+        <h2>Hotel Feedback Form</h2>
+
+        <form>
+
+            <label for="name">Name:</label>
+
+            <input type="text" id="name" name="name" required><br><br>
+
+
+            <label for="email">Email:</label>
+
+            <input type="email" id="email" name="email" required><br><br>
+
+
+            <label>Rate Us:</label>
+
+            <div class="rating">
+
+                <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+
+                <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+
+                <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+
+                <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+
+                <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+
+            </div><br>
+
+
+            <label for="comments">Comments:</label><br>
+
+            <textarea id="comments" name="comments" rows="4" cols="30" required></textarea><br><br>
+
+
+            <button type="submit">Submit Feedback</button>
+
+        </form>
+
+    </div>
+
+    <div class="contact">
+        <p>For inquiries, contact us at: <a href="mailto:info@tophotelsindia.com">info@tophotelsindia.com</a></p>
+        <p>Call us: +91 91005 34535</p>
+    </div>
+    <div class="footer">
+        &copy; 2025 Top Hotels in India | All Rights Reserved
+    </div>
+
+</body>
+
+</html>

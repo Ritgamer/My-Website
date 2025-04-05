@@ -116,12 +116,77 @@
         .contact a:hover {
             text-decoration: underline;
         }
+                .sidebar {
+
+            position: fixed;
+
+            top: 0;
+
+            left: -250px;
+
+            width: 250px;
+
+            height: 100%;
+
+            background: white;
+
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+
+            transition: left 0.3s ease;
+
+            padding: 15px;
+
+        }
+
+        .sidebar.active {
+
+            left: 0;
+
+        }
+    
+.list-group-item {
+
+border: none;
+
+padding: 10px 15px;
+
+font-size: 16px;
+
+background: none;
+
+transition: background 0.3s ease, color 0.3s ease;
+
+}
+
+.list-group-item a {
+
+text-decoration: none;
+
+color: #333;
+
+display: block;
+
+}
+
+.list-group-item:hover {
+
+background: #f0f0f0;
+
+}
+
+.list-group-item a:hover {
+
+color: #007bff;
+
+}
     </style>
 </head>
 
 <body>
     <header>Chennai</header>
     <nav>
+        
+        <a href="index.html">Index</a>
         <a href="mumbai.html">Mumbai</a>
         <a href="delhi.html">Delhi</a>
         <a href="bangalore.html">Bangalore</a>
@@ -150,27 +215,68 @@
             <h2>Taj Coromandel</h2>
             <img src="commendal C.jpg" alt="Taj Coromandel">
             <p>A luxurious hotel known for its elegant decor and exceptional service.</p>
+                    <div class="hotel">
+                        <strong>⭐ 4.9 Taj Coromandel</strong><br>
+                        📍 37, Mahatma Gandhi Rd, Nungambakkam, Chennai<br>
+                        📞 +91 44 6600 2827<br>
+                        ✨ A blend of South Indian tradition and modern luxury.<br>
+                        <a href="https://www.google.com/maps/place/Taj+Coromandel,+Chennai/@13.0583532,80.2481706,17z/data=!4m10!3m9!1s0x3a52664274918da1:0xc2a4e4c0d45dfa71!5m3!1s2025-04-14!4m1!1i2!8m2!3d13.0583532!4d80.2481706!16s%2Fm%2F0hhqlnv?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D"
+                            class="app-link">View in Map</a>
+                    </div>
         </div>
         <div class="hotel">
             <h2>ITC Grand Chola</h2>
             <img src="chola C.png" alt="ITC Grand Chola">
             <p>An architectural masterpiece offering grandeur, fine dining, and relaxation.</p>
+                    <div class="hotel">
+                        <strong>⭐ 4.8 ITC Grand Chola</strong><br>
+                        📍 63 Mount Road, Guindy, Chennai<br>
+                        📞 +91 44 2220 0000<br>
+                        ✨ Lavish architecture with royal hospitality.<br>
+                        <a href="https://www.google.com/maps/place/ITC+Grand+Chola,+a+Luxury+Collection+Hotel,+Chennai/@13.010559,80.220433,17z/data=!4m10!3m9!1s0x3a52676d5bb54be1:0xf2c9c9c91db16643!5m3!1s2025-04-14!4m1!1i2!8m2!3d13.010559!4d80.220433!16s%2Fg%2F11_snf43_?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D"
+                        class="app-link">View in Map</a>
+                    </div>
         </div>
         <div class="hotel">
             <h2>The Leela Palace Chennai</h2>
             <img src="the C.avif" alt="The Leela Palace Chennai">
             <p>A waterfront luxury hotel providing world-class hospitality and stunning views.</p>
+                    <div class="hotel">
+                        <strong>⭐ 4.7 The Leela Palace Chennai</strong><br>
+                        📍 Adyar Seaface, MRC Nagar, Chennai<br>
+                        📞 +91 44 3366 1234<br>
+                        ✨ Opulent palace-style hotel with sea views.<br>
+                        <a href="https://www.google.com/maps/place/The+Leela+Palace+Chennai+-+Seaside+Modern+Palace+Hotel/@13.017048,80.2736566,17z/data=!4m10!3m9!1s0x3a5267defbcfe68f:0x6658913274a5658f!5m3!1s2025-04-14!4m1!1i2!8m2!3d13.017048!4d80.2736566!16s%2Fm%2F0hzrpf9?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D"
+                            class="app-link">View in Map</a>
+                    </div>
         </div>
         <div class="hotel">
             <h2>Park Hyatt Chennai</h2>
             <img src="regency C.jpg" alt="Park Hyatt Chennai">
             <p>A contemporary hotel featuring modern amenities and exquisite spa services.</p>
+                    <div class="hotel">
+                        <strong>⭐ 4.6 Park Hyatt Chennai</strong><br>
+                        📍 39 Velachery Road, Near Raj Bhavan, Chennai<br>
+                        📞 +91 44 7177 1234<br>
+                        ✨ Contemporary design with a rooftop infinity pool.<br>
+                        <a href="https://www.google.com/maps/place/Park+Hyatt+Chennai/@13.010804,80.2233187,17z/data=!3m1!4b1!4m10!3m9!1s0x3a526772de5d643b:0x517d303714a83fc9!5m3!1s2025-04-14!4m1!1i2!8m2!3d13.010804!4d80.2233187!16s%2Fm%2F0n53c01?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" class="app-link">View in Map</a>
+                    </div>
         </div>
         <div class="hotel">
             <h2>Radisson Blu Hotel Chennai</h2>
             <img src="blu C.avif" alt="Radisson Blu Hotel Chennai">
             <p>A stylish business-friendly hotel with excellent facilities.</p>
+                    <div class="hotel">
+                        <strong>⭐ 4.5 Radisson Blu Hotel Chennai</strong><br>
+                        📍 GST Road, St. Thomas Mount, Chennai<br>
+                        📞 +91 44 2231 0101<br>
+                        ✨ Convenient luxury near the airport.<br>
+                        <a href="https://www.google.com/maps/place/Radisson+Blu+Hotel,+Chennai+City+Centre/@13.0670863,80.2557228,17z/data=!4m10!3m9!1s0x3a526614093abc83:0xc2b19e69906b782d!5m3!1s2025-04-14!4m1!1i2!8m2!3d13.0670863!4d80.2557228!16s%2Fg%2F11c4_0_sk2?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" class="app-link">View in Map</a>
+                    </div>
+                    
+
         </div>
+
     </div>
      
     <head>

@@ -116,12 +116,77 @@
         .contact a:hover {
             text-decoration: underline;
         }
+                .sidebar {
+
+            position: fixed;
+
+            top: 0;
+
+            left: -250px;
+
+            width: 250px;
+
+            height: 100%;
+
+            background: white;
+
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+
+            transition: left 0.3s ease;
+
+            padding: 15px;
+
+        }
+
+        .sidebar.active {
+
+            left: 0;
+
+        }
+    
+.list-group-item {
+
+border: none;
+
+padding: 10px 15px;
+
+font-size: 16px;
+
+background: none;
+
+transition: background 0.3s ease, color 0.3s ease;
+
+}
+
+.list-group-item a {
+
+text-decoration: none;
+
+color: #333;
+
+display: block;
+
+}
+
+.list-group-item:hover {
+
+background: #f0f0f0;
+
+}
+
+.list-group-item a:hover {
+
+color: #007bff;
+
+}
     </style>
 </head>
 
 <body>
     <header>Delhi</header>
     <nav>
+        
+        <a href="index.html">Index</a>
         <a href="mumbai.html">Mumbai</a>
         <a href="delhi.html">Delhi</a>
         <a href="bangalore.html">Bangalore</a>
@@ -150,26 +215,60 @@
                 <h2>The Leela Palace</h2>
                 <img src="palace D.jpg" alt="The Leela Palace">
                 <p>A regal hotel offering world-class luxury and elegance in the heart of New Delhi.</p>
+                        <div class="hotel">
+                            <strong>⭐ 4.5 The Leela Palace</strong><br>
+                            📍 Diplomatic Enclave, Chanakyapuri, New Delhi<br>
+                            📞 +91 11 3933 1234<br>
+                            ✨ Regal architecture and opulent interiors.<br>
+                            <a href="https://www.google.com/maps/place/The+Leela+Palace,+New+Delhi/@28.5798662,77.1867557,17z/data=!3m1!4b1!4m10!3m9!1s0x390d1d606f974797:0xa39df204f5d2d7f7!5m3!1s2025-04-14!4m1!1i2!8m2!3d28.5798662!4d77.1893306!16s%2Fg%2F11bc745z_5?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" class="app-link">View in Map</a>
+                        </div>
             </div>
             <div class="hotel">
                 <h2>The Oberoi, New Delhi</h2>
                 <img src="oberoi D.webp" alt="The Oberoi New Delhi">
                 <p>Known for its sophisticated decor, outstanding service, and fine dining options.</p>
+                        <div class="hotel">
+                            <strong>⭐ 4.6 The Oberoi, New Delhi</strong><br>
+                            📍 Dr. Zakir Hussain Marg, New Delhi<br>
+                            📞 +91 11 2436 3030<br>
+                            ✨ Modern style with stunning views of Delhi Golf Course.<br>
+                            <a href="https://www.google.com/maps/place/The+Oberoi,+New+Delhi/@28.5963001,77.2370853,17z/data=!4m10!3m9!1s0x390ce2e1f627bc0d:0x40c25df4a92d1404!5m3!1s2025-04-14!4m1!1i2!8m2!3d28.5963001!4d77.2396602!16s%2Fg%2F12lvjbn1t?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" class="app-link">View in Map</a>
+                        </div>
             </div>
             <div class="hotel">
                 <h2>Taj Mahal Hotel</h2>
                 <img src="mahal D.jpg" alt="Taj Mahal Hotel">
                 <p>An iconic luxury hotel with an elegant charm and impeccable hospitality.</p>
+                        <div class="hotel">
+                            <strong>⭐ 4.8 Taj Mahal Hotel</strong><br>
+                            📍 1, Mansingh Road, New Delhi<br>
+                            📞 +91 11 6656 6162<br>
+                            ✨ Legendary hospitality and iconic architecture.<br>
+                            <a href="https://www.google.com/maps/place/Taj+Mahal+Hotel,+Taj+Mansingh+Hotel+Rd,+South+Block,+Man+Singh+Road+Area,+New+Delhi,+Delhi+110011/@28.6047281,77.2209206,17z/data=!3m1!4b1!4m6!3m5!1s0x390ce2c3d9ea5a55:0x85c5e2066583c115!8m2!3d28.6047281!4d77.2234955!16s%2Fg%2F11c2l3_pc2?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" class="app-link">View in Map</a>
+                        </div>
             </div>
             <div class="hotel">
                 <h2>ITC Maurya</h2>
                 <img src="maurya D.png" alt="ITC Maurya">
                 <p>A luxurious hotel offering top-tier amenities and renowned fine dining experiences.</p>
+                        <div class="hotel">
+                            <strong>⭐ 4.7 ITC Maurya</strong><br>
+                            📍 Diplomatic Enclave, Sardar Patel Marg, New Delhi<br>
+                            📞 +91 11 2611 2233<br>
+                            ✨ A blend of royal heritage and modern luxury.<br>
+                            <a href="https://www.google.com/maps/place/ITC+Maurya,+a+Luxury+Collection+Hotel,+New+Delhi/@28.597279,77.170834,17z/data=!4m10!3m9!1s0x390d1d403fa92f2f:0x7f53da4f1ff4c214!5m3!1s2025-04-14!4m1!1i2!8m2!3d28.597279!4d77.1734089!16s%2Fg%2F1tfm510_?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" class="app-link">View in Map</a>
+                        </div>
             </div>
             <div class="hotel">
                 <h2>Shangri-La Eros Hotel</h2>
                 <img src="eros D.jpg" alt="Shangri-La Eros Hotel">
-                <p>A perfect blend of luxury, comfort, and breathtaking views of the city.</p>
+                <p>A perfect blend of luxury, comfort, and breathtaking views of the city.</p><div class="hotel">
+                    <strong>⭐ 4.9 Shangri-La Eros Hotel</strong><br>
+                    📍 19 Ashoka Road, Connaught Place, New Delhi<br>
+                    📞 +91 11 4119 1919<br>
+                    ✨ Blend of contemporary style and Asian hospitality.<br>
+                    <a href="https://www.google.com/maps/place/Shangri-La+Eros+New+Delhi/@28.6209501,77.2155931,17z/data=!3m1!5s0x390ce2ca8397d277:0xc6a21ca9e49c67ba!4m10!3m9!1s0x390ce2ca85e71fd1:0xa3186e3af651dd0c!5m3!1s2025-04-14!4m1!1i2!8m2!3d28.6209501!4d77.218168!16zL20vMGdtbDhk?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" class="app-link">View in Map</a>
+                </div>
             </div>
         </div>
                 <head>

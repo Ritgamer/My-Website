@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South India Hotels</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #444;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .movie-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .movie {
+            background-color: #333;
+            padding: 15px;
+            border-radius: 10px;
+            width: 200px;
+            text-align: center;
+        }
+
+        .movie img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .update-btn {
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 25px;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #272309;
+            text-decoration: none;
+            padding: 12px 25px;
+            display: inline-block;
+            font-size: 18px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background: rgba(231, 230, 223, 0.4);
+            border-radius: 8px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+
+
+
+        .footer {
+            background-color: #363a3d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+
+<body>
+
+
+    <nav>
+        
+        <a href="index.html">Index</a>
+        <a href="mumbai.html">Mumbai</a>
+        <a href="delhi.html">Delhi</a>
+        <a href="bangalore.html">Bangalore</a>
+        <a href="kolkata.html">Kolkata</a>
+        <a href="chennai.html">Chennai</a>
+        <a href="more.html">Basic</a>
+    </nav>
+
+    <h1>Popular Movies</h1>
+    <div class="navbar">
+        <a onclick="showMovies('hindi')">Hindi Movies</a>
+        <a onclick="showMovies('english')">English Movies</a>
+    </div>
+    <div class="movie-container" id="movieContainer"></div>
+    <button class="update-btn" onclick="updateMovies()">Update Movies</button>
+
+    <script>
+        const movies = {
+            hindi: [
+                { title: "3 Idiots", image: "https://upload.wikimedia.org/wikipedia/en/d/df/3_idiots_poster.jpg", rating: "8.4" },
+
+                { title: "Dangal", image: "https://upload.wikimedia.org/wikipedia/en/9/99/Dangal_Poster.jpg", rating: "8.5" },
+
+                { title: "Gully Boy", image: "https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Gully_Boy_poster.jpg/250px-Gully_Boy_poster.jpg", rating: "8.2" },
+
+                { title: "Kabir Singh", image: "https://upload.wikimedia.org/wikipedia/en/thumb/d/dc/Kabir_Singh.jpg/250px-Kabir_Singh.jpg", rating: "7.5" },
+
+                { title: "Tanhaji", image: "https://upload.wikimedia.org/wikipedia/en/thumb/3/3f/Tanaji_film_poster.jpg/220px-Tanaji_film_poster.jpg", rating: "7.6" },
+
+                { title: "Chhichhore", image: "https://upload.wikimedia.org/wikipedia/en/thumb/3/3d/Chhichhore_Poster.jpg/250px-Chhichhore_Poster.jpg", rating: "8.3" },
+
+                { title: "Andhadhun", image: "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/Andhadhun_poster.jpg/220px-Andhadhun_poster.jpg", rating: "8.3" },
+
+                { title: "PK", image: "https://upload.wikimedia.org/wikipedia/en/c/c3/PK_poster.jpg", rating: "8.1" },
+
+                { title: "Drishyam", image: "https://upload.wikimedia.org/wikipedia/en/8/8a/Drishyam_2015_film.jpg", rating: "8.2" }
+            ],
+            english: [
+                { title: "Inception", image: "https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg", rating: "8.8" },
+
+                { title: "The Dark Knight", image: "https://upload.wikimedia.org/wikipedia/en/1/1c/The_Dark_Knight_%282008_film%29.jpg", rating: "9.0" },
+
+                { title: "Interstellar", image: "https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg", rating: "8.6" },
+
+                { title: "Titanic", image: "https://upload.wikimedia.org/wikipedia/en/1/18/Titanic_%281997_film%29_poster.png", rating: "7.8" },
+
+                { title: "Avengers: Endgame", image: "https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg", rating: "8.4" },
+
+                { title: "The Shawshank Redemption", image: "https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg", rating: "9.3" },
+
+                { title: "Forrest Gump", image: "https://upload.wikimedia.org/wikipedia/en/6/67/Forrest_Gump_poster.jpg", rating: "8.8" },
+
+                { title: "The Godfather", image: "https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg", rating: "9.2" },
+
+                { title: "The Matrix", image: "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg", rating: "8.7" },
+
+                { title: "Gladiator", image: "https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Gladiator_%282000_film_poster%29.png/250px-Gladiator_%282000_film_poster%29.png", rating: "8.5" }
+            ]
+        };
+
+        let currentCategory = 'hindi';
+
+        function showMovies(category) {
+            currentCategory = category;
+            displayMovies();
+        }
+
+        function displayMovies() {
+            const container = document.getElementById("movieContainer");
+            container.innerHTML = "";
+            movies[currentCategory].forEach(movie => {
+                container.innerHTML += `
+                    <div class="movie">
+                        <img src="${movie.image}" alt="${movie.title}">
+                        <h3>${movie.title}</h3>
+                        <p>⭐ Rating: ${movie.rating}</p>
+                    </div>
+                `;
+            });
+        }
+
+        function updateMovies() {
+            movies[currentCategory].shift(); // Remove the oldest movie
+            movies[currentCategory].push({ title: "New Movie", image: "https://via.placeholder.com/200", rating: "8.8" }); // Add a new movie
+            displayMovies();
+        }
+
+        displayMovies();
+    </script>
+</body>
+
+</html>

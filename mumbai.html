@@ -116,12 +116,76 @@
         .contact a:hover {
             text-decoration: underline;
         }
+                .sidebar {
+
+            position: fixed;
+
+            top: 0;
+
+            left: -250px;
+
+            width: 250px;
+
+            height: 100%;
+
+            background: white;
+
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+
+            transition: left 0.3s ease;
+
+            padding: 15px;
+
+        }
+
+        .sidebar.active {
+
+            left: 0;
+
+        }
+    
+.list-group-item {
+
+border: none;
+
+padding: 10px 15px;
+
+font-size: 16px;
+
+background: none;
+
+transition: background 0.3s ease, color 0.3s ease;
+
+}
+
+.list-group-item a {
+
+text-decoration: none;
+
+color: #333;
+
+display: block;
+
+}
+
+.list-group-item:hover {
+
+background: #f0f0f0;
+
+}
+
+.list-group-item a:hover {
+
+color: #007bff;
+
+}
     </style>
 </head>
 
 <body>
     <header>Mumbai</header>
     <nav>
+        <a href="index.html">Index</a>
         <a href="mumbai.html">Mumbai</a>
         <a href="delhi.html">Delhi</a>
         <a href="bangalore.html">Bangalore</a>
@@ -150,26 +214,60 @@
             <h2>Taj Mahal Palace</h2>
             <img src="tajmahal mumbai2.jpg" alt="Taj Mahal Palace">
             <p>A landmark of luxury, offering stunning views of the Gateway of India and the Arabian Sea.</p>
+                <div class="hotel">
+                    <strong>⭐ 5.0 Taj Mahal Palace</strong><br>
+                    📍 Apollo Bandar, Colaba, Mumbai<br>
+                    📞 +91 22 6665 3366<br>
+                    ✨ Iconic sea-facing luxury and historic charm.<br>
+                    <a href="https://www.google.com/maps/place/The+Taj+Mahal+Palace,+Mumbai/@18.9216631,72.8332028,17z/data=!3m1!5s0x3be7d1c0c4d5ac1b:0xac82d2d2d765e4f5!4m10!3m9!1s0x3be7d1c06fffffff:0xc0290485a4d73f57!5m3!1s2025-04-14!4m1!1i2!8m2!3d18.9216631!4d72.8332028!16zL20vMDZieDFj?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" class="app-link">View in Map</a>
+                </div>
         </div>
         <div class="hotel">
             <h2>Oberoi Mumbai</h2>
             <img src="mumbai.webp" alt="Oberoi Mumbai">
             <p>World-class hospitality, elegant interiors, and exceptional service near Marine Drive.</p>
+                    <div class="hotel">
+                        <strong>⭐ 4.8 The Oberoi Mumbai</strong><br>
+                        📍 Nariman Point, Mumbai<br>
+                        📞 +91 22 6632 5757<br>
+                        ✨ Elegant luxury with Arabian Sea views.<br>
+                        <a href="https://www.google.com/maps/place/The+Oberoi,+Mumbai/@18.926975,72.8204516,17z/data=!4m10!3m9!1s0x3be7d1e96fffffff:0x385eaa65d82abec1!5m3!1s2025-04-14!4m1!1i2!8m2!3d18.926975!4d72.8204516!16s%2Fg%2F1tg2j445?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" class="app-link">View in Map</a>
+                    </div>
         </div>
         <div class="hotel">
             <h2>Trident Nariman Point</h2>
             <img src="point.jpg" alt="Trident Nariman Point">
             <p>A luxurious hotel with spectacular sea-facing rooms and fine dining experiences.</p>
+                    <div class="hotel">
+                        <strong>⭐ 4.7 Trident Nariman Point</strong><br>
+                        📍 Marine Drive, Mumbai<br>
+                        📞 +91 22 6632 4343<br>
+                        ✨ Premium business hotel with oceanfront.<br>
+                        <a href="https://www.google.com/maps/place/Trident+Hotel,+Nariman+Point+Mumbai/@18.9277306,72.8211985,17z/data=!4m10!3m9!1s0x3be7d1ef25d1fdc1:0xe3f924327fd9fdef!5m3!1s2025-04-14!4m1!1i2!8m2!3d18.9277306!4d72.8211985!16s%2Fg%2F1264ntqw9?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" class="app-link">View in Map</a>
+                    </div>
         </div>
         <div class="hotel">
             <h2>St. Regis Mumbai</h2>
             <img src="st.jpeg" alt="St. Regis Mumbai">
-            <p>Experience opulence at its finest with breathtaking city views and top-tier amenities.</p>
+            <p>Experience opulence at its finest with breathtaking city views and top-tier amenities.</p><div class="hotel">
+                <strong>⭐ 4.6 St. Regis Mumbai</strong><br>
+                📍 Lower Parel, Mumbai<br>
+                📞 +91 22 6162 8000<br>
+                ✨ Ultra-modern hotel with skyline views and butler service.<br>
+                <a href="https://www.google.com/maps/place/The+St.+Regis+Mumbai/@18.9944817,72.8240099,17z/data=!4m10!3m9!1s0x3be7ce8b78ac3db9:0x395ad82b0a483225!5m3!1s2025-04-14!4m1!1i2!8m2!3d18.9944817!4d72.8240099!16s%2Fg%2F1pty1tbs9?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" class="app-link">View in Map</a>
+            </div>
         </div>
         <div class="hotel">
             <h2>ITC Maratha</h2>
             <img src="maratha.jpg" alt="ITC Maratha">
             <p>Inspired by Maratha heritage, this luxury hotel offers grand architecture and a lavish experience.</p>
+                    <div class="hotel">
+                        <strong>⭐ 4.5 ITC Maratha</strong><br>
+                        📍 Sahar, Andheri East, Mumbai<br>
+                        📞 +91 22 2830 3030<br>
+                        ✨ Grand architecture with traditional Indian luxury.<br>
+                        <a href="https://www.google.com/maps/place/Itc+Maratha,+Ashok+Nagar,+Andheri+East,+Mumbai,+Maharashtra+400059/@19.1039919,72.8671577,17z/data=!3m1!4b1!4m6!3m5!1s0x3be7c8412ee59705:0xed4f05c5b81f25df!8m2!3d19.1039919!4d72.8697326!16s%2Fg%2F11bw3y7tyj?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" class="app-link">View in Map</a>
+                    </div>
         </div>
     </div>
 
